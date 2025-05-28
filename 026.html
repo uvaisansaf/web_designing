@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Relax Spa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .hero {
+      background-image: url('a.jpg'); 
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      position: relative;
+    }
+
+    nav {
+      position: absolute;
+      top: 40px;
+      right: 60px;
+      background-color: rgba(0, 0, 0, 0.5); 
+      border-radius: 8px;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      margin-left: 40px;
+      color: #555;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: black; 
+    }
+
+    .text-box {
+      position: absolute;
+      top: 30%;
+      left: 80px;
+      max-width: 500px;
+    }
+
+    .text-box h1 {
+      font-size: 52px;
+      font-weight: bold;
+      line-height: 1.2;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #333; 
+    }
+
+    .discount {
+      margin-top: 15px;
+      font-size: 14px;
+      color: white;
+    }
+
+    /* Responsive design */
+    @media screen and (max-width: 768px) {
+      .hero {
+        height: 80vh; 
+      }
+
+      .text-box {
+        left: 10px;
+        top: 20%;
+        max-width: 90%;
+      }
+
+      .text-box h1 {
+        font-size: 32px;
+      }
+
+      nav {
+        top: 20px;
+        right: 20px;
+        padding: 5px 15px;
+      }
+
+      nav a {
+        font-size: 16px;
+        margin-left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <a href="#" aria-label="Home">Home</a>
+      <a href="#" aria-label="Services">Services</a>
+      <a href="#" aria-label="About Us">About Us</a>
+      <a href="#" aria-label="Contact">Contact</a>
+    </nav>
+    <div class="text-box">
+      <h1>GET IN<br>RELAX<br>TODAY</h1>
+      <a href="#" class="btn">JOIN NOW →</a>
+      <p class="discount">25% Discount on first month!</p>
+    </div>
+  </div>
+</body>
+</html>
